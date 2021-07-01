@@ -16,8 +16,7 @@ from sagemaker.predictor import csv_serializer
 # Define IAM role 定义环境变量 IAM 访问角色
 role = get_execution_role()
 prefix = 'sagemaker/DEMO-xgboost-dm'
-containers = {'ap-southeast-2': '783357654285.dkr.ecr.ap-southeast-2.amazonaws.com/sagemaker-xgboost:latest',
-              'ap-southeast-2': '544295431143.dkr.ecr.ap-southeast-2.amazonaws.com/xgboost:latest'} 
+containers = {'ap-southeast-2': '783357654285.dkr.ecr.ap-southeast-2.amazonaws.com/sagemaker-xgboost:0.90-1-cpu-py3'} 
 # each region has its XGBoost container: 
 # https://docs.aws.amazon.com/sagemaker/latest/dg/ecr-ap-southeast-2.html#xgboost-ap-southeast-2.title
 
